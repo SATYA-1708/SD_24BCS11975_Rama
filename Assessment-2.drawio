@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="Netflix HLD" id="netflix-hld">
+    <mxGraphModel dx="2555" dy="1410" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="clients" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontStyle=1;dashed=0;arcSize=8;fontSize=14;" value="1. Clients" vertex="1">
+          <mxGeometry height="200" width="340" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="client_mobile" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;" value="Mobile" vertex="1">
+          <mxGeometry height="60" width="65" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="client_web" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;" value="Web" vertex="1">
+          <mxGeometry height="60" width="65" x="140" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="client_tv" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;" value="Smart TV" vertex="1">
+          <mxGeometry height="60" width="65" x="220" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="client_console" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;" value="Console" vertex="1">
+          <mxGeometry height="60" width="65" x="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="clients_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=12;" value="Mobile / Web / Smart TV / Console" vertex="1">
+          <mxGeometry height="30" width="305" x="60" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;verticalAlign=middle;align=center;" value="2. DNS" vertex="1">
+          <mxGeometry height="90" width="220" x="100" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;verticalAlign=middle;align=center;dashed=1;" value="3. CDN&lt;br&gt;&lt;b&gt;Content Delivery Network&lt;/b&gt;&lt;br&gt;(Open Connect)" vertex="1">
+          <mxGeometry height="130" width="240" x="90" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_api_gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="API Gateway" vertex="1">
+          <mxGeometry height="80" width="260" x="500" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="User Service" vertex="1">
+          <mxGeometry height="80" width="260" x="780" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Auth Service" vertex="1">
+          <mxGeometry height="80" width="260" x="500" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_profile" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Profile Service" vertex="1">
+          <mxGeometry height="80" width="260" x="780" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_catalog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Catalog Service" vertex="1">
+          <mxGeometry height="80" width="260" x="500" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_reco" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Recommendation Service" vertex="1">
+          <mxGeometry height="80" width="260" x="780" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_playback" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Playback Service" vertex="1">
+          <mxGeometry height="80" width="260" x="500" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Search Service" vertex="1">
+          <mxGeometry height="80" width="260" x="780" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="svc_video_meta" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Video Metadata Service" vertex="1">
+          <mxGeometry height="80" width="540" x="500" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="data_layer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontColor=#1E88E5;fontStyle=1;strokeColor=light-dark(#1E88E5, #ecf0f4);fillColor=none;dashed=1;arcSize=6;fontSize=14;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. Data Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="580" width="380" x="1150" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="db_user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="User Database&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(User info, Profiles)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="1180" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="db_catalog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Catalog Database&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(Movies, Shows, Metadata)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="1180" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="db_history" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Viewing History DB&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(Watch history, Progress)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="1180" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Cache&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(Redis)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="1180" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="blob" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;align=left;spacingLeft=10;fontSize=13;" value="Blob Storage&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(Videos, Thumbnails)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="1180" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="data_processing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;verticalAlign=middle;align=center;dashed=1;" value="6. Data Processing&lt;br&gt;&lt;b&gt;Stream Processing / Analytics&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;(User activity, Recommendations)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="360" x="1170" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_payment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;" value="Payment Gateway" vertex="1">
+          <mxGeometry height="70" width="190" x="170" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_email" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;" value="Email / SMS Service" vertex="1">
+          <mxGeometry height="70" width="190" x="380" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_monitoring" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;" value="Monitoring &amp; Logging" vertex="1">
+          <mxGeometry height="70" width="190" x="590" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_thirdparty" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=12;" value="Third Party APIs" vertex="1">
+          <mxGeometry height="70" width="190" x="800" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="clients" style="endArrow=block;html=1;strokeColor=#000000;" target="dns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="dns" style="endArrow=block;html=1;strokeColor=#000000;" target="cdn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="cdn" style="endArrow=block;html=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="505.5357142857142" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#000000;" target="data_layer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="417.8947368421052" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="data_layer" style="endArrow=block;html=1;strokeColor=#000000;" target="data_processing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="data_processing" style="endArrow=block;html=1;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="625.5172413793102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="7mutkVXbv6cCJEKofLPN-3" style="endArrow=block;html=1;dashed=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="651.1650485436894" y="800" as="sourcePoint" />
+            <mxPoint x="616.2135922330099" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="endArrow=block;html=1;dashed=1;strokeColor=#000000;" target="cdn">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="523.7209302325582" y="900" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7mutkVXbv6cCJEKofLPN-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontColor=#1E88E5;fontStyle=1;strokeColor=light-dark(#1E88E5, #dbdee1);fillColor=none;dashed=1;arcSize=6;fontSize=14;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Application Layer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="580" width="595" x="475" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7mutkVXbv6cCJEKofLPN-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontColor=#1E88E5;fontStyle=1;strokeColor=light-dark(#1E88E5,#FFFFFF);fillColor=none;dashed=1;arcSize=6;fontSize=14;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;7. External Services&lt;/span&gt;" vertex="1">
+          <mxGeometry height="160" width="930" x="110" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="7mutkVXbv6cCJEKofLPN-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 37px;&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;NETFLIX&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="577.5" x="475" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
